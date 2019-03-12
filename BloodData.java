@@ -18,4 +18,14 @@ public class BloodData {
     public String getBloodType() {
         return bloodType;
     }
+    BloodData() {
+        bloodType = "o";
+        factor = '+';
+    }
+
+    BloodData(String bloodType, char factor) {
+        this.bloodType = bloodType;
+        this.factor = factor;
+    }
+
 }
