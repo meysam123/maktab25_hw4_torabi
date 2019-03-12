@@ -1,7 +1,15 @@
 package com.maktab25.hw4.torabi.practice1;
+
 public class MessageCoder {
     private String message;
     private int code;
+
+    MessageCoder(String s, int code) {
+        message = s;
+        this.code = code;
+
+    }
+
     public void setCode(int code) {
         this.code = code;
     }
@@ -17,6 +25,7 @@ public class MessageCoder {
     public int getCode() {
         return code;
     }
+
     private char encrypt(int i) {
         char ch = ' ';
         if (message.charAt(i) != ' ')
@@ -25,6 +34,7 @@ public class MessageCoder {
             return ch;
 
     }
+
     String encryptAll() {
         char[] ch = new char[message.length()];
         for (int i = 0; i < message.length(); i++)
