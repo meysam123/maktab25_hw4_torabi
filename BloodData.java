@@ -23,14 +23,8 @@ public class BloodData {
         factor = '+';
     }
     BloodData(String bloodType, char factor) {
-        if (bloodType.equalsIgnoreCase("AB") || bloodType.equalsIgnoreCase("A") || bloodType.equalsIgnoreCase("B") || bloodType.equalsIgnoreCase("O"))
             this.bloodType = bloodType;
-        else
-            System.out.println("This Blood Type is not valid");
-        if (factor == '-' || factor == '+')
             this.factor = factor;
-        else
-            System.out.println("This factor is not valid");
     }
 
 }
