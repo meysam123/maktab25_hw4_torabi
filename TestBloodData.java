@@ -1,8 +1,14 @@
 package com.maktab25.hw4.torabi.practice4;
+import java.util.Scanner;
 
 public class TestBloodData {
     public static void main(String[] args) {
-        BloodData bloodData = new BloodData("aB", '-');
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter Blood Type");
+        String bloodType=scanner.nextLine();
+        System.out.println("Enter factor:+ or -");
+        char factor=scanner.nextLine().charAt(0);
+        BloodData bloodData = new BloodData(bloodType, factor);
         if (bloodData.getBloodType().equalsIgnoreCase("AB") || bloodData.getBloodType().equalsIgnoreCase("A") || bloodData.getBloodType().equalsIgnoreCase("B") || bloodData.getBloodType().equalsIgnoreCase("O"))
             if (bloodData.getFactor() == '-' || bloodData.getFactor() == '+')
                 System.out.println(bloodData.getBloodType() + bloodData.getFactor());
