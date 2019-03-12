@@ -25,4 +25,10 @@ public class MessageCoder {
             return ch;
 
     }
+    String encryptAll() {
+        char[] ch = new char[message.length()];
+        for (int i = 0; i < message.length(); i++)
+            ch[i] = encrypt(i);
+        return new String(ch);
+    }
 }
