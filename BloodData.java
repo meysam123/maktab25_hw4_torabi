@@ -19,7 +19,7 @@ public class BloodData {
         return bloodType;
     }
     BloodData() {
-        bloodType = "o";
+        bloodType = "O";
         factor = '+';
     }
     BloodData(String bloodType, char factor) {
