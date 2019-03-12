@@ -17,4 +17,12 @@ public class MessageCoder {
     public int getCode() {
         return code;
     }
+    private char encrypt(int i) {
+        char ch = ' ';
+        if (message.charAt(i) != ' ')
+            return (char) (((int) message.charAt(i)) + code);
+        else
+            return ch;
+
+    }
 }
