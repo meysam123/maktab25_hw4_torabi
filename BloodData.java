@@ -23,7 +23,7 @@ public class BloodData {
         factor = '+';
     }
     BloodData(String bloodType, char factor) {
-            this.bloodType = bloodType;
+            this.bloodType = bloodType.toUpperCase();
             this.factor = factor;
     }
 
