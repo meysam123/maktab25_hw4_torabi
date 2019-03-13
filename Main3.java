@@ -2,7 +2,7 @@ package com.maktab25.hw4.torabi.practice3;
 
 import java.util.Scanner;
 
-public class Main {
+public class Main3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter Price of a Photo Book");
