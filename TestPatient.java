@@ -18,7 +18,5 @@ public class TestPatient {
             System.out.println("Age:"+age);
             System.out.println(patient.getBloodData().getBloodType() + patient.getBloodData().getFactor());
         }
-
-
     }
 }
